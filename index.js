@@ -4,8 +4,10 @@ const http = require("http");
 const cors = require("cors");
 const {env} = require("./app/constant");
 const { errorHandler } = require("./app/middleware");
+const morgan = require('morgan');
 
 const app = express();
+app.use(morgan('dev'));
 app.use(cors());
 app.use((req, res, next) => {
   // Website you wish to allow to connect
