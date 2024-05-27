@@ -73,5 +73,5 @@ const closeHandler = () => {
   });
 };
 
-process.on("SIGTERM", closeHandler);
-process.on("SIGINT", closeHandler);
+// process.on("SIGTERM", closeHandler);
+// process.on("SIGINT", closeHandler);
